@@ -20,6 +20,11 @@ nav {
     z-index: 1;
 }
 
+nav h1 {
+    padding: 1rem;
+    color: rgb(34, 229, 255);
+}
+
 .nav {
     position: absolute;
     bottom: 0;
@@ -30,11 +35,6 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-h1 {
-    padding: 1rem;
-    color: rgb(34, 229, 255);
 }
 
 ul {
@@ -55,141 +55,21 @@ li:hover {
     color: rgb(54, 54, 54);
 }
 
-/* ----------------------Landing */
-
-#landing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.623)), url("../images/maldives-1993704_1280.jpg");
-    background-size: cover;
-    color: white;
-    opacity: 0;
+section {
     height: 100vh;
-    position: relative;
-    animation: fade 1s ease-in forwards;
-}
-
-#landing h2 {
-    font-size: 4rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    background: linear-gradient(to bottom, rgb(122, 239, 255), rgb(255, 242, 168));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: translate(-50%, -50%) scale(0);
-    animation: slideInLeft 2s ease 1s forwards;
-}
-
-#landing h3 {
-    position: absolute;
-    top: 60%;
-    left: 27.5%;
-    font-size: 3rem;
-    opacity: 0;
-    color: rgb(255, 242, 168);
-    animation: fade 1.5s ease-in 3s forwards;
-}
-
-#landing button {
-    position: absolute;
-    top: 73%;
-    left: 27.5%;
-    opacity: 0;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 2px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: rgb(34, 229, 255);
-    color: rgb(51, 51, 51);
-    animation: fade 1.5s ease-in 3s forwards;
-}
-
-/* ----------------------------Boxes */
-
-#boxes {
-    padding: 20rem 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    opacity: 0;
 }
 
-#boxes h1 {
-    font-size: 3rem;
-    margin-bottom: 4rem;
+#one {
+    background-color: red;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-evenly;
+#two {
+    background-color: blueviolet;
 }
 
-article {
-    display: flex;
-    flex-flow: column;
-    margin: 0 1rem;
-    width: 25%;
-    color: rgb(56, 56, 56);
-}
-
-article img {
-    height: 250px;
-    border-radius: 2px;
-}
-
-article h4 {
-    font-size: 2rem;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgb(122, 239, 255), rgb(255, 242, 168));
-}
-
-article p {
-    padding: 1rem 0;
-    font-size: 1.1rem;
-}
-
-/* ---------------------Footer */
-
-#footer {
-    background-color: rgb(25, 135, 150);
-    padding: 3rem 1rem;
-    color: white;
-}
-
-/* ------------------------------animated classes */
-
-.fadeIn {
-    animation: fade 1.5s ease-in forwards;
-}
-
-/* ---------------------Animations */
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        left: -10%;
-        transform: translate(-50%, -50%) scale(0);
-    }
-    50% {
-        opacity: .5;
-        left: 25%;
-        transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-        opacity: 1;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-    }
+#three {
+    background-color: green;
 }
