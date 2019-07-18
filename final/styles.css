@@ -58,7 +58,7 @@ li:hover {
 /* ----------------------Landing */
 
 #landing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.623)), url("./images/maldives-1993704_1280.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.623)), url("../images/maldives-1993704_1280.jpg");
     background-size: cover;
     color: white;
     opacity: 0;
